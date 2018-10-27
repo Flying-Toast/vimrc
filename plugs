@@ -1,0 +1,9 @@
+" vim-plug
+call plug#begin()
+Plug 'sheerun/vim-polyglot'
+Plug 'joshdick/onedark.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'scarface-one/vim-dlang-phobos-highlighter'
+call plug#end()
+
