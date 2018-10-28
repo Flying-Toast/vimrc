@@ -54,3 +54,9 @@ nmap <Esc> :noh<CR>
 
 " don't show linenumbers in :terminal mode
 au TermOpen * setlocal nonumber norelativenumber
+
+" lower updatetime so that changes appear in gitgutter faster
+set updatetime=100
+
+" always show symbol gutter, so that it doesn't 'shift' the editor when gitgutter has no symbols
+set signcolumn=yes
