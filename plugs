@@ -5,5 +5,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scarface-one/vim-dlang-phobos-highlighter'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
