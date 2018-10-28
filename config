@@ -41,3 +41,6 @@ tnoremap <Esc> <C-\><C-n>
 
 " don't show startscreen, just edit new file when vim is opened
 set shm+=I
+
+" make `:W` do the same thing as `:w`
+cnoreabbrev W w
