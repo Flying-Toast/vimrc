@@ -44,6 +44,7 @@ set shm+=I
 
 " make `:W` do the same thing as `:w`
 cnoreabbrev W w
+cnoreabbrev Q q
 cnoreabbrev Wq wq
 cnoreabbrev Qa qa
 cnoreabbrev Wqa wqa
