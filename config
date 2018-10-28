@@ -48,3 +48,6 @@ cnoreabbrev Q q
 cnoreabbrev Wq wq
 cnoreabbrev Qa qa
 cnoreabbrev Wqa wqa
+
+" use <Esc> to clear search highlighting
+nmap <Esc> :noh<CR>
