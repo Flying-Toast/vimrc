@@ -51,3 +51,6 @@ cnoreabbrev Wqa wqa
 
 " use <Esc> to clear search highlighting
 nmap <Esc> :noh<CR>
+
+" don't show linenumbers in :terminal mode
+au TermOpen * setlocal nonumber norelativenumber
