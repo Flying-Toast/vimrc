@@ -50,7 +50,10 @@ cnoreabbrev Qa qa
 cnoreabbrev Wqa wqa
 
 " use <Esc> to clear search highlighting
-nmap <Esc> :noh<CR>
+nmap <silent> <Esc> :noh<CR>
 
 " don't show linenumbers in :terminal mode
 au TermOpen * setlocal nonumber norelativenumber
+
+" use ctrl-s to save
+nnoremap <silent> <C-s> :w<CR>
