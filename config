@@ -61,3 +61,6 @@ nnoremap <silent> <C-s> :w<CR>
 " use [shift]-tab to cycle through tabs
 nnoremap <silent> <Tab> :tabnext<CR>
 nnoremap <silent> <S-Tab> :tabprevious<CR>
+
+" highlight the current line
+set cursorline
