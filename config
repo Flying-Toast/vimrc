@@ -56,7 +56,8 @@ nmap <silent> <Esc> :noh<CR>
 au TermOpen * setlocal nonumber norelativenumber
 
 " use ctrl-s to save
-nnoremap <silent> <C-s> :w<CR>
+noremap <silent> <C-s> <Esc>:w<CR>
+inoremap <silent> <C-s> <Esc>:w<CR>
 
 " use [shift]-tab to cycle through tabs
 nnoremap <silent> <Tab> :tabnext<CR>
