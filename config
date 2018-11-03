@@ -52,8 +52,11 @@ cnoreabbrev Wqa wqa
 " use <Esc> to clear search highlighting
 nmap <silent> <Esc> :noh<CR>
 
-" don't show linenumbers in :terminal mode
-au TermOpen * setlocal nonumber norelativenumber
+" NeoVim specific stuff
+if (has("nvim"))
+	" don't show linenumbers in :terminal mode
+	au TermOpen * setlocal nonumber norelativenumber
+endif
 
 " use ctrl-s to save
 noremap <silent> <C-s> <Esc>:w<CR>
