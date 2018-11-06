@@ -50,10 +50,12 @@ cnoreabbrev Wqa wqa
 nmap <silent> <Esc> :noh<CR>
 
 " NeoVim specific stuff
-if (has("nvim"))
+if has("nvim")
 	" don't show linenumbers in :terminal mode
 	au TermOpen * setlocal nonumber norelativenumber
+endif
 
+if has("terminal")
 	" use <Esc> to exit terminal-mode
 	tnoremap <Esc> <C-\><C-n>
 endif
