@@ -36,9 +36,6 @@ set backspace=indent,eol,start
 " use system clipboard
 set clipboard+=unnamedplus
 
-" use <Esc> to exit terminal-mode
-tnoremap <Esc> <C-\><C-n>
-
 " don't show startscreen, just edit new file when vim is opened
 set shm+=I
 
@@ -56,6 +53,9 @@ nmap <silent> <Esc> :noh<CR>
 if (has("nvim"))
 	" don't show linenumbers in :terminal mode
 	au TermOpen * setlocal nonumber norelativenumber
+
+	" use <Esc> to exit terminal-mode
+	tnoremap <Esc> <C-\><C-n>
 endif
 
 " use ctrl-s to save
