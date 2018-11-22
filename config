@@ -72,10 +72,13 @@ set path+=**
 " :f -> :find
 cabbrev f find
 
-" TEMP:just until I get used to using :f instead of :e
-cabbrev e !echo use :f
-
 " relative line numbers only when not in insert mode
 set rnu
 au InsertEnter * setlocal nornu
 au InsertLeave * setlocal rnu
+
+" disable ex mode
+map Q <Nop>
+
+" TEMP:just until I get used to using :f instead of :e
+cabbrev e !echo use :f
