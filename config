@@ -1,3 +1,13 @@
+" vim-plug
+call plug#begin()
+Plug 'joshdick/onedark.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'scarface-one/vim-dlang-phobos-highlighter'
+Plug 'KabbAmine/vCoolor.vim'
+Plug 'keith/swift.vim'
+Plug 'pangloss/vim-javascript'
+call plug#end()
 " Dont log viminfo
 set viminfo=
 
@@ -74,6 +84,11 @@ cabbrev f find
 
 " disable ex mode
 map Q <Nop>
+
+" relative line numbers except in insert mode
+set rnu
+au InsertEnter * setlocal nornu
+au InsertLeave * setlocal rnu
 
 " TEMP:just until I get used to using :f instead of :e
 cabbrev e !echo use :f
