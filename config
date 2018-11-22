@@ -72,11 +72,6 @@ set path+=**
 " :f -> :find
 cabbrev f find
 
-" relative line numbers only when not in insert mode
-set rnu
-au InsertEnter * setlocal nornu
-au InsertLeave * setlocal rnu
-
 " disable ex mode
 map Q <Nop>
 
