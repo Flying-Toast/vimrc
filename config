@@ -65,3 +65,12 @@ inoremap <silent> <C-s> <Esc>:w<CR>
 " use [shift]-tab to cycle through tabs
 nnoremap <silent> <Tab> :tabnext<CR>
 nnoremap <silent> <S-Tab> :tabprevious<CR>
+
+" Recursively search for files in subdirs
+set path+=**
+
+" :f -> :find
+cabbrev f find
+
+" TEMP:just until I get used to using :f instead of :e
+cabbrev e !echo use :f
