@@ -75,10 +75,5 @@ cabbrev f find
 " disable ex mode
 map Q <Nop>
 
-" relative line numbers except in insert mode
-set rnu
-au InsertEnter * setlocal nornu
-au InsertLeave * setlocal rnu
-
 " TEMP:just until I get used to using :f instead of :e
 cabbrev e !echo use :f
