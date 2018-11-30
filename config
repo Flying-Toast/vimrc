@@ -74,6 +74,3 @@ cabbrev f find
 
 " disable ex mode
 map Q <Nop>
-
-" TEMP:just until I get used to using :f instead of :e
-cabbrev e !echo use :f
