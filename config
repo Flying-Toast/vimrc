@@ -16,8 +16,9 @@ colorscheme onedark
 set shiftwidth=4
 set tabstop=4
 
-" show line numbers
+" relative line numbers
 set number
+set rnu
 
 " set no line wrapping
 set nowrap
