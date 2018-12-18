@@ -79,3 +79,8 @@ map Q <Nop>
 " netrw - remove banner and show project tree
 let g:netrw_banner=0
 let g:netrw_liststyle=3
+
+" delimitMate + indentation options
+let delimitMate_expand_cr = 1
+let delimitMate_expand_space = 1
+set smartindent
