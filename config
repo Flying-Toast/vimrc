@@ -71,7 +71,7 @@ nnoremap <silent> <S-Tab> :tabprevious<CR>
 set path+=**
 
 " :f -> :find
-cabbrev f find
+cabbrev f <C-r>=(getcmdtype() == ':' && getcmdpos() == 1 ? 'find' : 'f')<CR>
 
 " disable ex mode
 map Q <Nop>
