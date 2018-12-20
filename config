@@ -40,7 +40,7 @@ set clipboard+=unnamedplus
 " don't show startscreen, just edit new file when vim is opened
 set shm+=I
 
-" make `:W` do the same thing as `:w`
+" make `:W` do the same thing as `:w`, etc
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Wq wq
@@ -56,7 +56,7 @@ if has("nvim")
 	tnoremap <Esc> <C-\><C-n>
 	
 	" don't show linenumbers in :terminal mode
-	au TermOpen * setlocal nonumber norelativenumber
+	autocmd TermOpen * setlocal nonumber norelativenumber
 endif
 
 " use ctrl-s to save
@@ -84,3 +84,6 @@ let g:netrw_liststyle=3
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 set smartindent
+
+" remove trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
