@@ -87,3 +87,6 @@ set smartindent
 
 " remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Hide those pesky tildes
+highlight EndOfBuffer guifg=bg
