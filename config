@@ -85,8 +85,12 @@ let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 set smartindent
 
-" remove trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
+" remove trailing whitespace (except on markdown files)
+fun! StripTrailingWhitespace()
+	if &ft != "markdown"
+		%s/\s\+$//e
+	endif
+endfun
 
 " Hide those pesky tildes
 highlight EndOfBuffer guifg=bg
