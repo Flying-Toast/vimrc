@@ -91,6 +91,7 @@ fun! StripTrailingWhitespace()
 		%s/\s\+$//e
 	endif
 endfun
+autocmd BufWritePre * call StripTrailingWhitespace()
 
 " Hide those pesky tildes
 highlight EndOfBuffer guifg=bg
