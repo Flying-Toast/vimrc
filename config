@@ -57,9 +57,6 @@ if has("nvim")
 	
 	" don't show linenumbers in :terminal mode
 	autocmd TermOpen * setlocal nonumber norelativenumber
-
-	" change end of buffer character
-	set fillchars+=eob:█
 endif
 
 " use ctrl-s to save
