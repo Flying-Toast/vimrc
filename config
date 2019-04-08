@@ -92,3 +92,6 @@ fun! StripTrailingWhitespace()
 	endif
 endfun
 autocmd BufWritePre * call StripTrailingWhitespace()
+
+" disable highlighting in vim-sneak
+highlight link Sneak Normal
