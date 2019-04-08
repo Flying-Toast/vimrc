@@ -7,4 +7,5 @@ Plug 'scarface-one/vim-dlang-phobos-highlighter'
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'keith/swift.vim'
 Plug 'pangloss/vim-javascript'
+Plug 'justinmk/vim-sneak'
 call plug#end()
