@@ -54,7 +54,7 @@ nmap <silent> <Esc> :noh<CR>
 if has("nvim")
 	" use <Esc> to exit terminal-mode
 	tnoremap <Esc> <C-\><C-n>
-	
+
 	" don't show linenumbers in :terminal mode
 	autocmd TermOpen * setlocal nonumber norelativenumber
 endif
@@ -93,5 +93,7 @@ fun! StripTrailingWhitespace()
 endfun
 autocmd BufWritePre * call StripTrailingWhitespace()
 
-" disable highlighting in vim-sneak
+" disable highlighting in vim-sneak, and use s for operators
 highlight link Sneak Normal
+omap s <Plug>Sneak_s
+omap S <Plug>Sneak_S
