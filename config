@@ -86,11 +86,11 @@ let delimitMate_expand_space = 1
 set smartindent
 
 " remove trailing whitespace (except on markdown files)
-fun! StripTrailingWhitespace()
+function StripTrailingWhitespace()
 	if &ft != "markdown"
 		%s/\s\+$//e
 	endif
-endfun
+endfunction
 autocmd BufWritePre * call StripTrailingWhitespace()
 
 " disable highlighting in vim-sneak, and use s for operators
