@@ -8,4 +8,9 @@ Plug 'KabbAmine/vCoolor.vim'
 Plug 'keith/swift.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'justinmk/vim-sneak'
+
+Plug 'ncm2/ncm2'
+Plug 'ncm2/ncm2-d', {'for': 'd'}
+Plug 'roxma/nvim-yarp'
+
 call plug#end()
