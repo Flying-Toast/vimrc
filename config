@@ -46,6 +46,9 @@ cnoreabbrev Q q
 cnoreabbrev Wq wq
 cnoreabbrev Qa qa
 cnoreabbrev Wqa wqa
+cnoreabbrev Tabf tabf
+cnoreabbrev Tabe tabe
+cnoreabbrev Tabnew tabnew
 
 " use <Esc> to clear search highlighting
 nmap <silent> <Esc> :noh<CR>
