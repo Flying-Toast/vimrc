@@ -103,4 +103,6 @@ omap S <Plug>Sneak_S
 
 " DCD completion stuff
 autocmd BufEnter *.d call ncm2#enable_for_buffer()
-autocmd BufEnter *.d setlocal completeopt=noinsert,menuone
+
+" Completion menu settings
+set completeopt=noinsert,menuone
