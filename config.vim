@@ -106,3 +106,6 @@ autocmd BufEnter *.d call ncm2#enable_for_buffer()
 
 " Completion menu settings
 set completeopt=noinsert,menuone
+
+" Disable automatic comment insertion
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
