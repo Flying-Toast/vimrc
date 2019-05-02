@@ -8,6 +8,7 @@ Plug 'KabbAmine/vCoolor.vim'
 Plug 'keith/swift.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'justinmk/vim-sneak'
+Plug 'digitaltoad/vim-pug'
 
 Plug 'ncm2/ncm2'
 Plug 'ncm2/ncm2-d', {'for': 'd'}
