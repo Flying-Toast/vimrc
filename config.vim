@@ -50,13 +50,13 @@ cnoreabbrev Tabf tabf
 cnoreabbrev Tabe tabe
 cnoreabbrev Tabnew tabnew
 
-" use <Esc> to clear search highlighting
-nmap <silent> <Esc> :noh<CR>
-
 " NeoVim specific stuff
 if has("nvim")
 	" use <Esc> to exit terminal-mode
 	tnoremap <Esc> <C-\><C-n>
+
+	" use <Esc> to clear search highlighting
+	nmap <silent> <Esc> :noh<CR>
 
 	" don't show linenumbers in :terminal mode
 	autocmd TermOpen * setlocal nonumber norelativenumber
