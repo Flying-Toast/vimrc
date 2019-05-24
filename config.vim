@@ -110,7 +110,12 @@ omap s <Plug>Sneak_s
 omap S <Plug>Sneak_S
 
 " DCD completion stuff
-autocmd BufEnter *.d call ncm2#enable_for_buffer()
+function EnableDCD()
+	if has("nvim") && executable("dcd-server")
+		call ncm2#enable_for_buffer()
+	endif
+endfunction
+autocmd BufEnter *.d call EnableDCD()
 
 " Completion menu settings
 set completeopt=noinsert,menuone
