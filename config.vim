@@ -1,3 +1,11 @@
+" NeoVim specific plugins
+if has("nvim")
+	Plug 'ncm2/ncm2'
+	Plug 'ncm2/ncm2-d', {'for': 'd'}
+	Plug 'roxma/nvim-yarp'
+endif
+call plug#end()
+
 " Dont log viminfo
 set viminfo=
 

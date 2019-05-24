@@ -10,8 +10,3 @@ Plug 'pangloss/vim-javascript'
 Plug 'justinmk/vim-sneak'
 Plug 'digitaltoad/vim-pug'
 
-Plug 'ncm2/ncm2'
-Plug 'ncm2/ncm2-d', {'for': 'd'}
-Plug 'roxma/nvim-yarp'
-
-call plug#end()
