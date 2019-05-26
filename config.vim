@@ -79,7 +79,7 @@ nnoremap <silent> <Tab> :tabnext<CR>
 nnoremap <silent> <S-Tab> :tabprevious<CR>
 
 " Recursively search for files in subdirs
-set path+=**
+set path=**
 
 " :f -> :find
 cabbrev f <C-r>=(getcmdtype() == ':' && getcmdpos() == 1 ? 'find' : 'f')<CR>
