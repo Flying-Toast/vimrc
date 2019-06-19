@@ -23,7 +23,6 @@ colorscheme onedark
 " tabs are 4 columns wide
 set shiftwidth=4
 set tabstop=4
-set noexpandtab
 
 " relative line numbers
 set number
@@ -96,6 +95,7 @@ let g:netrw_liststyle=3
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 set smartindent
+set noexpandtab
 
 " remove trailing whitespace (except on markdown files)
 function StripTrailingWhitespace()
