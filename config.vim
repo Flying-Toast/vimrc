@@ -23,6 +23,7 @@ colorscheme onedark
 " tabs are 4 columns wide
 set shiftwidth=4
 set tabstop=4
+set noexpandtab
 
 " relative line numbers
 set number
