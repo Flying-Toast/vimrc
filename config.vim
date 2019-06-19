@@ -126,3 +126,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Use pug hightlighting for DIET
 autocmd BufEnter *.dt set ft=pug
+
+" STOP USING SPACES STUPID VIM
+autocmd BufNewFile,BufRead * set noexpandtab
