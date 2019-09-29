@@ -2,6 +2,7 @@
 if has("nvim")
 	Plug 'ncm2/ncm2'
 	Plug 'ncm2/ncm2-d', {'for': 'd'}
+	Plug 'ncm2/ncm2-racer', {'for': 'rust'}
 	Plug 'roxma/nvim-yarp'
 endif
 call plug#end()
@@ -117,6 +118,14 @@ function EnableDCD()
 	endif
 endfunction
 autocmd BufEnter *.d call EnableDCD()
+
+" Rust (racer) completion stuff
+function EnableRacer()
+	if has("nvim") && executable("racer")
+		call ncm2#enable_for_buffer()
+	endif
+endfunction
+autocmd BufEnter *.rs call EnableRacer()
 
 " Completion menu settings
 set completeopt=noinsert,menuone
