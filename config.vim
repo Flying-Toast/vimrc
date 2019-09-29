@@ -1,8 +1,12 @@
 " NeoVim specific plugins
 if has("nvim")
 	Plug 'ncm2/ncm2'
-	Plug 'ncm2/ncm2-d', {'for': 'd'}
-	Plug 'ncm2/ncm2-racer', {'for': 'rust'}
+	if executable('dcd-server')
+		Plug 'ncm2/ncm2-d', {'for': 'd'}
+	endif
+	if executable('racer')
+		Plug 'ncm2/ncm2-racer', {'for': 'rust'}
+	endif
 	Plug 'roxma/nvim-yarp'
 endif
 call plug#end()
