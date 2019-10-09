@@ -9,6 +9,5 @@ Plug 'keith/swift.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'justinmk/vim-sneak'
 Plug 'digitaltoad/vim-pug'
-Plug 'leafgarland/typescript-vim'
 Plug 'rust-lang/rust.vim'
 
