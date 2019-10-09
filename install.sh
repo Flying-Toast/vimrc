@@ -9,8 +9,9 @@ mv ~/.vimrc ./oldVimrc
 #copy plugins to vimrc:
 cat plugs.vim >> ~/.vimrc
 
-#run PlugInstall in vim to install vim-plug plugins, then quit vim
+#Install and update plugs
 vim -c "PlugInstall | qa"
+vim -c "PlugUpdate | qa"
 
 #move the rest of the vimrc file, now that the plugins have been installed
 cat config.vim >> ~/.vimrc
