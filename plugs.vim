@@ -10,5 +10,4 @@ Plug 'pangloss/vim-javascript'
 Plug 'justinmk/vim-sneak'
 Plug 'digitaltoad/vim-pug'
 Plug 'rust-lang/rust.vim'
-Plug 'editorconfig/editorconfig-vim'
 
