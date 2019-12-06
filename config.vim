@@ -4,6 +4,9 @@ if has("nvim")
 	if executable('dcd-server')
 		Plug 'ncm2/ncm2-d', {'for': 'd'}
 	endif
+	if executable('racer')
+		Plug 'ncm2/ncm2-racer', {'for': 'rust'}
+	endif
 	Plug 'roxma/nvim-yarp'
 endif
 call plug#end()
@@ -121,6 +124,17 @@ function EnableDCD()
 	endif
 endfunction
 autocmd BufEnter *.d call EnableDCD()
+
+function SetupRust()
+	" Matching <> messes up delimitMate with less-than sign
+	setlocal matchpairs-=<:>
+
+	" Rust (racer) completion stuff
+	if has("nvim") && executable("racer")
+		call ncm2#enable_for_buffer()
+	endif
+endfunction
+autocmd BufEnter *.rs call SetupRust()
 
 " Completion menu settings
 set completeopt=noinsert,menuone
