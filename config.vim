@@ -4,10 +4,6 @@ if has("nvim")
 	if executable('dcd-server')
 		Plug 'ncm2/ncm2-d', {'for': 'd'}
 	endif
-	if executable('racer')
-		Plug 'ncm2/ncm2-racer', {'for': 'rust'}
-	endif
-	Plug 'roxma/nvim-yarp'
 endif
 call plug#end()
 
@@ -28,6 +24,8 @@ colorscheme onedark
 " tabs are 4 columns wide
 set shiftwidth=4
 set tabstop=4
+" 8 wide for c
+autocmd BufEnter *.c,*.h setlocal shiftwidth=8 tabstop=8
 
 " relative line numbers
 set number
@@ -122,17 +120,6 @@ function EnableDCD()
 	endif
 endfunction
 autocmd BufEnter *.d call EnableDCD()
-
-function SetupRust()
-	" Matching <> messes up delimitMate with less-than sign
-	setlocal matchpairs-=<:>
-
-	" Rust (racer) completion stuff
-	if has("nvim") && executable("racer")
-		call ncm2#enable_for_buffer()
-	endif
-endfunction
-autocmd BufEnter *.rs call SetupRust()
 
 " Completion menu settings
 set completeopt=noinsert,menuone
