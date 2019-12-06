@@ -4,6 +4,7 @@ if has("nvim")
 	if executable('dcd-server')
 		Plug 'ncm2/ncm2-d', {'for': 'd'}
 	endif
+	Plug 'roxma/nvim-yarp'
 endif
 call plug#end()
 
