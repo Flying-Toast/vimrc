@@ -11,4 +11,5 @@ Plug 'justinmk/vim-sneak'
 Plug 'digitaltoad/vim-pug'
 Plug 'rust-lang/rust.vim'
 Plug 'peterhoeg/vim-qml'
+Plug 'tweekmonster/django-plus.vim'
 
