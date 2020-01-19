@@ -125,5 +125,3 @@ set completeopt=noinsert,menuone
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 autocmd BufEnter *.dt set ft=pug
-
-inoremap <C-o> <Esc>o
