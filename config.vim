@@ -62,7 +62,7 @@ if has("nvim")
 	tnoremap <Esc> <C-\><C-n>
 
 	" use <Esc> to clear search highlighting
-	nmap <silent> <Esc>:noh<CR>
+	nmap <silent> <Esc> :noh<CR>
 
 	" don't show linenumbers in :terminal mode
 	autocmd TermOpen * setlocal nonumber norelativenumber
