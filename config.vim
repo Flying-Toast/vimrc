@@ -3,9 +3,15 @@ if has("nvim")
 	Plug 'ncm2/ncm2'
 	if executable('dcd-server')
 		Plug 'ncm2/ncm2-d', {'for': 'd'}
+		autocmd BufEnter *.d call ncm2#enable_for_buffer()
 	endif
 	if executable('racer')
 		Plug 'ncm2/ncm2-racer', {'for': 'rust'}
+		autocmd BufEnter *.rs call ncm2#enable_for_buffer()
+	endif
+	if system("python -c 'import jedi'") == ""
+		Plug 'ncm2/ncm2-jedi', {'for': 'python'}
+		autocmd BufEnter *.py call ncm2#enable_for_buffer()
 	endif
 	Plug 'roxma/nvim-yarp'
 endif
@@ -102,22 +108,8 @@ highlight link Sneak Normal
 omap s <Plug>Sneak_s
 omap S <Plug>Sneak_S
 
-function EnableDCD()
-	if has("nvim") && executable("dcd-server")
-		call ncm2#enable_for_buffer()
-	endif
-endfunction
-autocmd BufEnter *.d call EnableDCD()
-
-function SetupRust()
-	" Matching <> messes up delimitMate with less-than sign
-	setlocal matchpairs-=<:>
-
-	if has("nvim") && executable("racer")
-		call ncm2#enable_for_buffer()
-	endif
-endfunction
-autocmd BufEnter *.rs call SetupRust()
+" Matching <> messes up delimitMate with less-than sign
+autocmd BufEnter *.rs setlocal matchpairs-=<:>
 
 set completeopt=noinsert,menuone
 
