@@ -12,4 +12,5 @@ Plug 'digitaltoad/vim-pug'
 Plug 'rust-lang/rust.vim'
 Plug 'peterhoeg/vim-qml'
 Plug 'tweekmonster/django-plus.vim'
+Plug 'elixir-editors/vim-elixir'
 
