@@ -52,14 +52,18 @@ set clipboard+=unnamedplus
 
 set shm+=I
 
-cnoreabbrev W w
-cnoreabbrev Q q
-cnoreabbrev Wq wq
-cnoreabbrev Qa qa
-cnoreabbrev Wqa wqa
-cnoreabbrev Tabf tabf
-cnoreabbrev Tabe tabe
-cnoreabbrev Tabnew tabnew
+function CommandAbbrev(from, to)
+  execute 'cabbrev ' . a:from . ' <c-r>=getcmdpos() == 1 && getcmdtype() == ":" ? "' . a:to . '" : "' . a:from . '"<CR>'
+endfunction
+
+call CommandAbbrev("W", "w")
+call CommandAbbrev("Q", "q")
+call CommandAbbrev("Wq", "Wq")
+call CommandAbbrev("Qa", "qa")
+call CommandAbbrev("Wqa", "wqa")
+call CommandAbbrev("Tabf", "tabf")
+call CommandAbbrev("Tabe", "tabe")
+call CommandAbbrev("f", "find")
 
 if has("nvim")
 	" use <Esc> to exit terminal-mode
@@ -81,9 +85,6 @@ nnoremap <silent> <Tab> :tabnext<CR>
 nnoremap <silent> <S-Tab> :tabprevious<CR>
 
 set path=**
-
-" :f -> :find
-cabbrev f <C-r>=(getcmdtype() == ':' && getcmdpos() == 1 ? 'find' : 'f')<CR>
 
 map Q <Nop>
 
