@@ -108,7 +108,7 @@ omap s <Plug>Sneak_s
 omap S <Plug>Sneak_S
 
 " Matching <> messes up delimitMate with less-than sign
-autocmd BufEnter *.rs setlocal matchpairs-=<:>
+autocmd FileType rust setlocal matchpairs-=<:>
 
 set completeopt=noinsert,menuone
 
