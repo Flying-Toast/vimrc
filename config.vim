@@ -53,7 +53,7 @@ set clipboard+=unnamedplus
 set shm+=I
 
 function CommandAbbrev(from, to)
-  execute 'cabbrev ' . a:from . ' <c-r>=getcmdpos() == 1 && getcmdtype() == ":" ? "' . a:to . '" : "' . a:from . '"<CR>'
+	execute 'cabbrev ' . a:from . ' <c-r>=getcmdpos() == 1 && getcmdtype() == ":" ? "' . a:to . '" : "' . a:from . '"<CR>'
 endfunction
 
 call CommandAbbrev("W", "w")
