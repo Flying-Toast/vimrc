@@ -104,7 +104,7 @@ function StripTrailingWhitespace()
 endfunction
 autocmd BufWritePre * call StripTrailingWhitespace()
 
-highlight link Sneak Normal
+highlight link Sneak None
 omap s <Plug>Sneak_s
 omap S <Plug>Sneak_S
 
