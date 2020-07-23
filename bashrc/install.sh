@@ -1,2 +1,6 @@
-mv ~/.bashrc ./bashrc.old
+#!/bin/bash
+
+cd bashrc
+
+mv ~/.bashrc bashrc.old
 cp bashrc ~/.bashrc
