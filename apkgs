@@ -1,0 +1,37 @@
++ networkmanager
++ ttf-dejavu
++ ttf-joypixels
++ gnome
++ gnome-tweaks
++ firefox
++ neovim
++ gcc
++ binutils
++ bind-tools
++ whois
++ xclip
++ vlc
++ rust-racer
++ python-pynvim
++ gdb
++ tree
++ man-db
+
+
+- gnome-weather
+- epiphany
+- gnome-software
+- totem
+- gnome-remote-desktop
+- gnome-calendar
+- gnome-maps
+- gnome-books
+- gnome-boxes
+- gnome-clocks
+- gnome-contacts
+- gnome-getting-started-docs
+- gnome-music
+- gnome-photos
+- gnome-user-docs
+- yelp
+- simple-scan
