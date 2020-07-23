@@ -19,6 +19,7 @@
 + man-db
 + git
 + pacman-contrib
++ bash-completion
 
 
 - gnome-weather
