@@ -56,13 +56,6 @@ function CommandAbbrev(from, to)
 	execute 'cabbrev ' . a:from . ' <c-r>=getcmdpos() == 1 && getcmdtype() == ":" ? "' . a:to . '" : "' . a:from . '"<CR>'
 endfunction
 
-call CommandAbbrev("W", "w")
-call CommandAbbrev("Q", "q")
-call CommandAbbrev("Wq", "Wq")
-call CommandAbbrev("Qa", "qa")
-call CommandAbbrev("Wqa", "wqa")
-call CommandAbbrev("Tabf", "tabf")
-call CommandAbbrev("Tabe", "tabe")
 call CommandAbbrev("f", "find")
 
 if has("nvim")
@@ -117,3 +110,8 @@ set completeopt=noinsert,menuone
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 autocmd BufEnter *.dt set ft=pug
+
+nnoremap <Space> :
+
+" TEMP: for breaking the habit
+nnoremap : <nop>
