@@ -8,3 +8,5 @@ rustup component add rust-src
 rustup toolchain add nightly
 
 mkdir ~/workspace
+
+git config pull.ff only
