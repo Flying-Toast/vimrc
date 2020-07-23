@@ -19,3 +19,15 @@ dconf write /org/gnome/desktop/background/picture-uri "'file:///usr/share/backgr
 dconf write /org/gnome/shell/enabled-extensions "['launch-new-instance@gnome-shell-extensions.gcampax.github.com']"
 dconf write /org/gnome/desktop/input-sources/xkb-options "['lv3:ralt_switch', 'caps:escape']"
 dconf write /org/gnome/desktop/interface/enable-hot-corners false
+
+# gnome settings
+dconf write /org/gnome/desktop/screensaver/picture-uri "'file:///usr/share/backgrounds/gnome/Endless-shapes.jpg'"
+dconf write /org/gnome/desktop/search-providers/disabled "['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Software.desktop', 'org.gnome.Photos.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Characters.desktop']"
+dconf write /org/gnome/desktop/privacy/remember-recent-files false
+dconf write /org/gnome/desktop/privacy/recent-files-max-age 1
+dconf write /org/gnome/desktop/wm/keybindings/switch-applications "@as []"
+dconf write /org/gnome/desktop/wm/keybindings/switch-applications-backward "@as []"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-down "['<Super>Tab']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-up "['<Shift><Super>Tab']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-windows "['<Alt>Tab']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-windows-backward "['<Shift><Alt>Tab']"
