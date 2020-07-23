@@ -17,6 +17,7 @@
 + tree
 + man-db
 + git
++ pacman-contrib
 
 
 - gnome-weather
