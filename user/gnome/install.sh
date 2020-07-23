@@ -12,6 +12,8 @@ curl -L -o ext.zip "https://github.com/RaphaelRochet/arch-update/releases/downlo
 mkdir -p ~/.local/share/gnome-shell/extensions
 rm -r ~/.local/share/gnome-shell/extensions/arch-update@RaphaelRochet
 unzip -q ext.zip -d ~/.local/share/gnome-shell/extensions/arch-update@RaphaelRochet
+# arch-update settings
+dconf write /org/gnome/shell/extensions/arch-update/always-visible false
 
 # terminal
 TERM_BASE="/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "[='=]")"
