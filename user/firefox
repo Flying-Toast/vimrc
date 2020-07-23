@@ -1,0 +1,4 @@
+TODO: automate this
+
+== about:config ==
+network.IDN_show_punycode true
