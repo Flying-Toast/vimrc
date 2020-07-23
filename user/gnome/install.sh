@@ -1,5 +1,18 @@
 #!/bin/bash
 
+cd gnome &> /dev/null
+
+# arch-update extension
+rm -rf arch-update &> /dev/null
+git clone https://github.com/RaphaelRochet/arch-update &> /dev/null
+cd arch-update
+LATEST_TAG=$(git describe --tags)
+cd ..
+curl -L -o ext.zip "https://github.com/RaphaelRochet/arch-update/releases/download/$LATEST_TAG/arch-update@RaphaelRochet.zip"
+mkdir -p ~/.local/share/gnome-shell/extensions
+rm -r ~/.local/share/gnome-shell/extensions/arch-update@RaphaelRochet
+unzip -q ext.zip -d ~/.local/share/gnome-shell/extensions/arch-update@RaphaelRochet
+
 # terminal
 TERM_BASE="/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "[='=]")"
 dconf write $TERM_BASE/default-size-columns 84
@@ -16,7 +29,7 @@ dconf write $TERM_BASE/palette "['rgb(92,99,112)', 'rgb(224,108,117)', 'rgb(152,
 # tweaks
 dconf write /org/gnome/desktop/interface/gtk-theme "'Adwaita-dark'"
 dconf write /org/gnome/desktop/background/picture-uri "'file:///usr/share/backgrounds/gnome/Endless-shapes.jpg'"
-dconf write /org/gnome/shell/enabled-extensions "['launch-new-instance@gnome-shell-extensions.gcampax.github.com']"
+dconf write /org/gnome/shell/enabled-extensions "['launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'arch-update@RaphaelRochet']"
 dconf write /org/gnome/desktop/input-sources/xkb-options "['lv3:ralt_switch', 'caps:escape']"
 dconf write /org/gnome/desktop/interface/enable-hot-corners false
 
