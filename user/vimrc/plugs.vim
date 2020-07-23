@@ -1,4 +1,3 @@
-" vim-plug
 call plug#begin()
 Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
