@@ -63,7 +63,7 @@ if has("nvim")
 	tnoremap <Esc> <C-\><C-n>
 
 	" use <Esc> to clear search highlighting
-	nmap <silent> <Esc> :noh<CR>
+	nnoremap <silent> <Esc> :noh<CR>
 
 	" don't show linenumbers in :terminal mode
 	autocmd TermOpen * setlocal nonumber norelativenumber
@@ -76,6 +76,10 @@ inoremap <silent> <C-s> <Esc>:w<CR>
 " use [shift]-tab to cycle through tabs
 nnoremap <silent> <Tab> :tabnext<CR>
 nnoremap <silent> <S-Tab> :tabprevious<CR>
+
+nnoremap <Space> :
+" TEMP: for breaking the habit:
+nnoremap : <nop>
 
 set path=**
 
@@ -110,8 +114,3 @@ set completeopt=noinsert,menuone
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 autocmd BufEnter *.dt set ft=pug
-
-nnoremap <Space> :
-
-" TEMP: for breaking the habit
-nnoremap : <nop>
