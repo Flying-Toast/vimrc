@@ -52,6 +52,7 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/screenshot-clip "@as [
 dconf write /org/gnome/settings-daemon/plugins/media-keys/window-screenshot "@as []"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/area-screenshot "@as []"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/screenshot "@as []"
+dconf write /org/gnome/desktop/wm/keybindings/show-desktop "['<Super>d']"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'<Primary><Alt>t'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command "'gnome-terminal'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name "'Terminal'"
