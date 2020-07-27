@@ -6,7 +6,7 @@ cd gnome &> /dev/null
 rm -rf arch-update &> /dev/null
 git clone https://github.com/RaphaelRochet/arch-update &> /dev/null
 cd arch-update
-LATEST_TAG=$(git describe --tags)
+LATEST_TAG=$(git describe --tags --abbrev=0)
 cd ..
 curl -L -o ext.zip "https://github.com/RaphaelRochet/arch-update/releases/download/$LATEST_TAG/arch-update@RaphaelRochet.zip"
 mkdir -p ~/.local/share/gnome-shell/extensions
