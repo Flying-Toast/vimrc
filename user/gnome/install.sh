@@ -3,15 +3,10 @@
 cd gnome &> /dev/null
 
 # arch-update extension
-rm -rf arch-update &> /dev/null
-git clone https://github.com/RaphaelRochet/arch-update &> /dev/null
-cd arch-update
-LATEST_TAG=$(git describe --tags --abbrev=0)
-cd ..
-curl -L -o ext.zip "https://github.com/RaphaelRochet/arch-update/releases/download/$LATEST_TAG/arch-update@RaphaelRochet.zip"
+git clone https://github.com/RaphaelRochet/arch-update
 mkdir -p ~/.local/share/gnome-shell/extensions
 rm -r ~/.local/share/gnome-shell/extensions/arch-update@RaphaelRochet
-unzip -q ext.zip -d ~/.local/share/gnome-shell/extensions/arch-update@RaphaelRochet
+mv arch-update ~/.local/share/gnome-shell/extensions/arch-update@RaphaelRochet
 # arch-update settings
 dconf write /org/gnome/shell/extensions/arch-update/always-visible false
 
