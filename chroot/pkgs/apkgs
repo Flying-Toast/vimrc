@@ -23,6 +23,7 @@
 + pacman-contrib
 + bash-completion
 + make
++ transmission-gtk
 
 
 - gnome-weather
