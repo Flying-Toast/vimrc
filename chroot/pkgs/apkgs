@@ -24,6 +24,7 @@
 + bash-completion
 + make
 + transmission-gtk
++ mlocate
 
 
 - gnome-weather

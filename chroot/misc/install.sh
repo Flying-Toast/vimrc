@@ -10,3 +10,5 @@ fi
 
 ln -s /usr/bin/nvim /usr/bin/vim
 ln -s /usr/bin/nvim /usr/bin/vi
+
+updatedb
