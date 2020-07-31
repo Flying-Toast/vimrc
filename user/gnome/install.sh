@@ -9,6 +9,7 @@ rm -r ~/.local/share/gnome-shell/extensions/arch-update@RaphaelRochet
 mv arch-update ~/.local/share/gnome-shell/extensions/arch-update@RaphaelRochet
 # arch-update settings
 dconf write /org/gnome/shell/extensions/arch-update/always-visible false
+dconf write /org/gnome/shell/extensions/arch-update/check-interval 30
 
 # terminal
 TERM_BASE="/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d "[='=]")"
