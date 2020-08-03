@@ -29,6 +29,7 @@ dconf write /org/gnome/desktop/background/picture-uri "'file:///usr/share/backgr
 dconf write /org/gnome/shell/enabled-extensions "['launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'arch-update@RaphaelRochet']"
 dconf write /org/gnome/desktop/input-sources/xkb-options "['lv3:ralt_switch', 'caps:escape']"
 dconf write /org/gnome/desktop/interface/enable-hot-corners false
+dconf write /org/gnome/desktop/peripherals/touchpad/click-method "'areas'"
 
 # gnome settings
 dconf write /org/gnome/desktop/screensaver/picture-uri "'file:///usr/share/backgrounds/gnome/Endless-shapes.jpg'"
@@ -56,6 +57,7 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "['
 dconf write /org/gnome/settings-daemon/plugins/color/night-light-enabled true
 dconf write /org/gnome/settings-daemon/plugins/color/night-light-temperature "uint32 3873"
 dconf write /org/gnome/shell/favorite-apps "@as []"
+dconf write /org/gnome/desktop/peripherals/touchpad/tap-to-click true
 
 # files
 dconf write /org/gnome/nautilus/icon-view/default-zoom-level "'standard'"
