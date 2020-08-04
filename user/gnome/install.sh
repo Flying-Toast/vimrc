@@ -60,5 +60,6 @@ dconf write /org/gnome/shell/favorite-apps "@as []"
 dconf write /org/gnome/desktop/peripherals/touchpad/tap-to-click true
 dconf write /org/gtk/settings/file-chooser/clock-format "'12h'"
 
-# files
+# other
 dconf write /org/gnome/nautilus/icon-view/default-zoom-level "'standard'"
+dconf write /org/gnome/gnome-screenshot/last-save-directory "'file://$HOME/workspace'"
