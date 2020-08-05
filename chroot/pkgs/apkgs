@@ -27,6 +27,7 @@
 + mlocate
 + nmap
 + inetutils
++ gnu-netcat
 
 
 - gnome-weather
