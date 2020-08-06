@@ -62,4 +62,5 @@ dconf write /org/gtk/settings/file-chooser/clock-format "'12h'"
 
 # other
 dconf write /org/gnome/nautilus/icon-view/default-zoom-level "'standard'"
+dconf write /org/gnome/nautilus/preferences/show-image-thumbnails "'never'"
 dconf write /org/gnome/gnome-screenshot/last-save-directory "'file://$HOME/workspace'"
