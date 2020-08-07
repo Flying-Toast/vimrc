@@ -9,4 +9,6 @@ rustup toolchain add nightly
 
 mkdir ~/workspace
 
+mkdir ~/.config/git
+touch ~/.config/git/config
 git config --global pull.ff only
