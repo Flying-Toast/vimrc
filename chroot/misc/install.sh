@@ -4,7 +4,7 @@ cd misc &> /dev/null
 
 if [ $(whoami) != "root" ]
 then
-	echo $1 needs root
+	echo $0 needs root
 	exit 1
 fi
 
