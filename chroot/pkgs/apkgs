@@ -29,6 +29,7 @@
 + inetutils
 + gnu-netcat
 + nautilus-image-converter
++ python-pip
 
 
 - gnome-weather
