@@ -78,8 +78,6 @@ nnoremap <silent> <Tab> :tabnext<CR>
 nnoremap <silent> <S-Tab> :tabprevious<CR>
 
 nnoremap <Space> :
-" TEMP: for breaking the habit:
-nnoremap : <nop>
 
 set path=**
 
