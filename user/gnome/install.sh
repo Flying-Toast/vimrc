@@ -59,6 +59,7 @@ dconf write /org/gnome/settings-daemon/plugins/color/night-light-temperature "ui
 dconf write /org/gnome/shell/favorite-apps "@as []"
 dconf write /org/gnome/desktop/peripherals/touchpad/tap-to-click true
 dconf write /org/gtk/settings/file-chooser/clock-format "'12h'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/max-screencast-length "uint32 0"
 
 # other
 dconf write /org/gnome/nautilus/icon-view/default-zoom-level "'standard'"
