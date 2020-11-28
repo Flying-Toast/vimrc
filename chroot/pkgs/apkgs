@@ -19,6 +19,7 @@
 + gdb
 + tree
 + man-db
++ man-pages
 + git
 + pacman-contrib
 + bash-completion
