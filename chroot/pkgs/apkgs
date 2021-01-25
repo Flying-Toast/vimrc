@@ -26,8 +26,6 @@
 + transmission-gtk
 + mlocate
 + nmap
-+ inetutils
-+ gnu-netcat
 + nautilus-image-converter
 + python-pip
 
