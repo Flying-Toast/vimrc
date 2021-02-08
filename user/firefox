@@ -4,3 +4,4 @@ TODO: automate this
 network.IDN_show_punycode true
 extensions.pocket.enabled false
 reader.parse-on-load.enabled false
+browser.sessionstore.warnOnQuit true
