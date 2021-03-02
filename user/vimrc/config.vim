@@ -37,6 +37,8 @@ autocmd BufEnter *.c,*.h setlocal shiftwidth=8 tabstop=8
 set number
 set rnu
 
+set mouse+=a
+
 set nowrap
 
 set laststatus=2
