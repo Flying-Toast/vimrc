@@ -1,22 +1,3 @@
-" NeoVim specific plugins
-if has("nvim")
-	Plug 'ncm2/ncm2'
-	if executable('dcd-server')
-		Plug 'ncm2/ncm2-d', {'for': 'd'}
-		autocmd BufEnter *.d call ncm2#enable_for_buffer()
-	endif
-	if executable('racer')
-		Plug 'ncm2/ncm2-racer', {'for': 'rust'}
-		autocmd BufEnter *.rs call ncm2#enable_for_buffer()
-	endif
-	if system("python -c 'import jedi'") == ""
-		Plug 'ncm2/ncm2-jedi', {'for': 'python'}
-		autocmd BufEnter *.py call ncm2#enable_for_buffer()
-	endif
-	Plug 'roxma/nvim-yarp'
-endif
-call plug#end()
-
 " Dont log viminfo
 set viminfo=
 
@@ -110,5 +91,3 @@ set completeopt=noinsert,menuone
 
 " Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
-autocmd BufEnter *.dt set ft=pug
